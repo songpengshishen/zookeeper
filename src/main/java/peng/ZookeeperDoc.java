@@ -24,7 +24,7 @@ public class ZookeeperDoc {
      * 注意:使用watcher必须在执行zookeeper操作时显示的注册,并且服务的发送一次事件通知后,watche就失效了必须反复注册
      * 服务端的通知通常不会包含变更内容,需要重新去拉取.
      * */
-    private Watcher  watcher;
+    public Watcher  watcher;
 
     /***
      *  AsyncCallback(异步回调接口):提供了processResult方法来处理以异步方式执行增,删,改,查等操作的结果.
